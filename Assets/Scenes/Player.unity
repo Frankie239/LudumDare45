@@ -226,7 +226,7 @@ SpriteRenderer:
   m_SortingOrder: 1
   m_Sprite: {fileID: -7709005597328439393, guid: 91505be95a5b85c4aa1c3532ae6259c5,
     type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.1981132, g: 0.18035777, b: 0.18035777, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -421,7 +421,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: -7895267580335433797, guid: 91505be95a5b85c4aa1c3532ae6259c5,
     type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.3584906, g: 0.33650768, b: 0.33650768, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -582,7 +582,7 @@ SpriteRenderer:
   m_SortingOrder: 1
   m_Sprite: {fileID: -6089410434772780915, guid: 91505be95a5b85c4aa1c3532ae6259c5,
     type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.1981132, g: 0.18035777, b: 0.18035777, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -742,7 +742,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -1426,7 +1426,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 5633595496526079969, guid: 91505be95a5b85c4aa1c3532ae6259c5,
     type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.1981132, g: 0.18035777, b: 0.18035777, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1507,7 +1507,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 3775088828492989452, guid: 91505be95a5b85c4aa1c3532ae6259c5,
     type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.1981132, g: 0.18035777, b: 0.18035777, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1853,7 +1853,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 5633595496526079969, guid: 91505be95a5b85c4aa1c3532ae6259c5,
     type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.1981132, g: 0.18035777, b: 0.18035777, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
