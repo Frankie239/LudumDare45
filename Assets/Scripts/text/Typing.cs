@@ -43,9 +43,8 @@ public class Typing : MonoBehaviour
 
         }
 
-        yield return new WaitForSeconds(3f);
 
-        Destroy(textDisplay);
+        Destroy(textDisplay,3);
 
     }
 }
