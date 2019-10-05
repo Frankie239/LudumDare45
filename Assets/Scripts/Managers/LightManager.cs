@@ -5,6 +5,7 @@ using UnityEngine;
 public enum Lights
 {
 	Blue,
+	Red,
 	None
 }
 public class LightManager : MonoBehaviour
@@ -40,6 +41,9 @@ public class LightManager : MonoBehaviour
 		{
 			case Lights.Blue:
 				playerLight.color = new Color(0, 22, 255, 0);
+				break;
+			case Lights.Red:
+				playerLight.color = new Color(255, 22, 0, 0);
 				break;
 		}
 	}
