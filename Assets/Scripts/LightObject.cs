@@ -9,7 +9,7 @@ public class LightObject : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other) {
         if (other.CompareTag("Player"))
         {
-            LightManager.GetLightManager().currentLight = lightToActive;
+            LightManager.GetLightManager().SetLight(lightToActive);
             Destroy(gameObject);
         }
     }
