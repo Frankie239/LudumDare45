@@ -22,12 +22,17 @@ public class AudioManager : MonoBehaviour
     {
         switch(color)
         {
-            case "Blue": PlayTheSong(0); break;
-            //case "Red": NewSong(1); break;
-            //case "Green": NewSong(2);  break;
-            //case "Yellow": NewSong(3);  break;
-            case "Violet": PlayTheSong(1);  break;
-            //case "Orange": NewSong(5); break;
+            case "Violet": PlayTheSong(0); break;
+            case "Yellow": PlayTheSong(1); break;
+            case "Red": PlayTheSong(2); break;
+
+                //case "Blue": PlayTheSong(0); break;
+
+
+                //case "Green": NewSong(2);  break;
+                //
+
+                //case "Orange": NewSong(5); break;
         }
     }
     public void PlayTheSong(int index)
