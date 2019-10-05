@@ -6,6 +6,10 @@ public enum Lights
 {
 	Blue,
 	Red,
+	Green,
+	Yellow,
+	Violet,
+	Orange,
 	None
 }
 public class LightManager : MonoBehaviour
