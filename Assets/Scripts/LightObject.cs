@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Light : MonoBehaviour
+public class LightObject : MonoBehaviour
 {
 	public Lights lightToActive;
 
