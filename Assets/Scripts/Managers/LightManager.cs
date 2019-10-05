@@ -49,6 +49,18 @@ public class LightManager : MonoBehaviour
 			case Lights.Red:
 				playerLight.color = new Color(255, 22, 0, 0);
 				break;
+			case Lights.Green:
+				playerLight.color = new Color(29, 130, 24, 0);
+				break;
+			case Lights.Yellow:
+				playerLight.color = new Color(199, 201, 56, 0);
+				break;
+			case Lights.Violet:
+				playerLight.color = new Color(131, 59, 197, 0);
+				break;
+			case Lights.Orange:
+				playerLight.color = new Color(224, 144, 39, 0);
+				break;
 		}
 	}
 }
