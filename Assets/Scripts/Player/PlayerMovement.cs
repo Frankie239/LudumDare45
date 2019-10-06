@@ -40,6 +40,11 @@ public class PlayerMovement : MonoBehaviour
 		{
 			animator.Play("MoveDown");
 		}
+
+        if (Input.GetKey(KeyCode.R))
+        {
+            Restart();
+        }
 	}
 
 	void FixedUpdate()
@@ -49,4 +54,9 @@ public class PlayerMovement : MonoBehaviour
 			new Vector2(horizontal, vertical) * movementSpeed * Time.fixedDeltaTime
 		);
 	}
+
+    public void Restart()
+    {
+        gameObject.transform.position = new Vector2(-2.32f, -2.23f);
+    }
 }
