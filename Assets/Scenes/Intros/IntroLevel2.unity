@@ -305,7 +305,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sentences: []
-  text: You are NOTHING
+  text: Nothing gives more HOPE than a tomorrow
   textDisplay: {fileID: 467725018}
   typeSpeed: 0.2
   nextLevel: Level2
