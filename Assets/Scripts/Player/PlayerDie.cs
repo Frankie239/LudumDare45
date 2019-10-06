@@ -11,4 +11,17 @@ public class PlayerDie : MonoBehaviour
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
+
+    public void RestartLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    private void Update()
+    {
+        if (Input.GetKey(KeyCode.R))
+        {
+            RestartLevel();
+        }
+    }
 }
