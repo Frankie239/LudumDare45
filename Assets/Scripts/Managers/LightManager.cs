@@ -17,9 +17,9 @@ public class LightManager : MonoBehaviour
 	private static LightManager lightManager;
 
 	public Lights currentLight = Lights.None;
-	public Light playerLight = default;
-	public GameObject endingLight = default;
-
+	
+	private Light playerLight = default;
+	private GameObject endingLight = default;
 	private int activatedLights = 0;
 
 	void Awake()
@@ -32,8 +32,9 @@ public class LightManager : MonoBehaviour
 		{
 			Destroy(gameObject);
 		}
-
+		playerLight = GameObject.FindGameObjectWithTag("Player").GetComponentInChildren<Light>();
 		playerLight.color = Color.black;
+		endingLight = GameObject.FindGameObjectWithTag("EndingLight");
 		endingLight.SetActive(false);
 	}
 
