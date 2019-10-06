@@ -24,27 +24,35 @@ public class PlayerMovement : MonoBehaviour
 		horizontal = Input.GetAxisRaw("Horizontal");
 		vertical = Input.GetAxisRaw("Vertical");
 
-		if (horizontal > 0)
+		if (horizontal != 0)
 		{
-			animator.Play("MoveRight");
+			if (horizontal > 0)
+			{
+				animator.Play("MoveRight");
+			}
+			if (horizontal < 0)
+			{
+				animator.Play("MoveLeft");
+			}
 		}
-		if (horizontal < 0)
+		else if (vertical != 0)
 		{
-			animator.Play("MoveLeft");
-		}
-		if (vertical > 0)
-		{
-			animator.Play("MoveUp");
-		}
-		if (vertical < 0)
-		{
-			animator.Play("MoveDown");
+			if (vertical > 0)
+			{
+				animator.Play("MoveUp");
+			}
+			if (vertical < 0)
+			{
+				animator.Play("MoveDown");
+			}
 		}
 
-        if (Input.GetKey(KeyCode.R))
-        {
-            Restart();
-        }
+
+
+		if (Input.GetKey(KeyCode.R))
+		{
+			Restart();
+		}
 	}
 
 	void FixedUpdate()
@@ -55,8 +63,8 @@ public class PlayerMovement : MonoBehaviour
 		);
 	}
 
-    public void Restart()
-    {
-        gameObject.transform.position = new Vector2(-2.32f, -2.23f);
-    }
+	public void Restart()
+	{
+		gameObject.transform.position = new Vector2(-2.32f, -2.23f);
+	}
 }
