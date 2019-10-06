@@ -7555,6 +7555,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentLight: 6
   playerLight: {fileID: 5823616890565922799}
+  endingLight: {fileID: 6240957161740953740}
 --- !u!4 &5435854609780019991
 Transform:
   m_ObjectHideFlags: 0

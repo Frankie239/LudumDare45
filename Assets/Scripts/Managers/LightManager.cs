@@ -18,6 +18,9 @@ public class LightManager : MonoBehaviour
 
 	public Lights currentLight = Lights.None;
 	public Light playerLight = default;
+	public GameObject endingLight = default;
+
+	private int activatedLights = 0;
 
 	void Awake()
 	{
@@ -31,6 +34,7 @@ public class LightManager : MonoBehaviour
 		}
 
 		playerLight.color = Color.black;
+		endingLight.SetActive(false);
 	}
 
 	public static LightManager GetLightManager()
@@ -67,6 +71,13 @@ public class LightManager : MonoBehaviour
 				playerLight.color = new Color(224, 144, 39, 0);
                 AudioManager.Audio_instance.ChangeMusic("Orange");
                 break;
+		}
+
+		activatedLights++;
+		
+		if(activatedLights == 6)
+		{
+			endingLight.SetActive(true);
 		}
 	}
 }
