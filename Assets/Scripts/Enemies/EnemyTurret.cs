@@ -15,8 +15,9 @@ public class EnemyTurret : MonoBehaviour
 
     private float timeBtwShots;
     public float startTimeBtwShots;
+    public float rotationSpeed;
    
-    void Update()
+    void FixedUpdate()
     {
         playerCol = Physics2D.OverlapCircle(transform.position, followRange, whatIsPlayer);
         playerDist = player.transform.position - transform.position;
@@ -26,17 +27,20 @@ public class EnemyTurret : MonoBehaviour
 
     void LookAtAndFire()
     {
+        Vector2 direction = player.transform.position - transform.position;
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
         if (playerCol != null) 
         {
-            Quaternion rotation = Quaternion.LookRotation
-                (player.transform.position - transform.position, transform.TransformDirection(Vector3.up));
-            transform.rotation = new Quaternion(0, 0, rotation.z, rotation.w);
+            //This implementation was somehow buggy. So changed it with Quaternion.AngleAxis. Works as intended now
+            //Leaving this here just because I want to know why it didnt work later. 
+            //Quaternion rotation = Quaternion.LookRotation
+            //    (direction, transform.TransformDirection(Vector3.up));
+            //transform.rotation = new Quaternion(0, 0, rotation.z, rotation.w);
+            Quaternion rot = Quaternion.AngleAxis(angle, Vector3.forward);
+            transform.rotation = Quaternion.SlerpUnclamped(transform.rotation, rot, rotationSpeed * Time.deltaTime);
             Fire();
         }
-        else
-        {
-            Quaternion.Euler(0, 180, 0);
-        }
+        
     }
 
     private void Fire()
