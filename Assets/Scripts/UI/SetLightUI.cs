@@ -34,7 +34,6 @@ public class SetLightUI : MonoBehaviour
             if (colors[i].name == color)
             {
                 s = colors[i];
-                Debug.Log("fiundcolor");
             }
         }
 
