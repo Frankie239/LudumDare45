@@ -100,7 +100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1
-  distanceToPlayer: 1
+  distanceToPlayer: 0
   range: 1.99
   whatIsPlayer:
     serializedVersion: 2

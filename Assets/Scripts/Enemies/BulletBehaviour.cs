@@ -5,15 +5,13 @@ using UnityEngine;
 public class BulletBehaviour : MonoBehaviour
 {
     public float speed = 1;
-    void Start()
-    {
-        
-    }
+    public float timeToDestroy = 2;
+   
 
-    // Update is called once per frame
+    
     void Update()
     {
         transform.Translate(Vector2.right * speed * Time.deltaTime);
-        Destroy(gameObject, 4);
+        Destroy(gameObject, timeToDestroy);
     }
 }
