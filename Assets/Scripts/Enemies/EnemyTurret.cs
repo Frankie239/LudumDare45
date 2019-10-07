@@ -21,7 +21,7 @@ public class EnemyTurret : MonoBehaviour
         playerCol = Physics2D.OverlapCircle(transform.position, followRange, whatIsPlayer);
         playerDist = player.transform.position - transform.position;
         LookAtAndFire();
-        Debug.Log(playerDist);
+//        Debug.Log(playerDist);
     }
 
     void LookAtAndFire()

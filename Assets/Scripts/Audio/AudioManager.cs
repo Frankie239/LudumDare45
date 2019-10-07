@@ -20,17 +20,14 @@ public class AudioManager : MonoBehaviour
 
     public void ChangeMusic(string color)
     {
-        switch(color)
+        switch (color)
         {
             case "Violet": PlayTheSong(0); break;
             case "Yellow": PlayTheSong(1); break;
             case "Red": PlayTheSong(2); break;
             case "Orange": PlayTheSong(3); break;
             case "Blue": PlayTheSong(4); break;
-            case "Green":PlayTheSong(5);  break;
-               
-
-
+            case "Green": PlayTheSong(5); break;
         }
     }
     public void PlayTheSong(int index)
@@ -54,7 +51,6 @@ public class AudioManager : MonoBehaviour
         oldSong = audio;
         oldSong.volume = 0.5f;
     }
-
 
     private void Start()
     {
@@ -81,13 +77,13 @@ public class AudioManager : MonoBehaviour
             timer2 -= Time.deltaTime * 45;
             ChangeVolume();
 
-            if (timer>= 50)
+            if (timer >= 50)
             {
                 activatetimers = false;
                 timer = 0;
                 timer2 = 50;
             }
-            
+
         }
 
     }
@@ -102,9 +98,5 @@ public class AudioManager : MonoBehaviour
         {
             oldSong.volume = value2;
         }
-       
-
     }
-
-
 }

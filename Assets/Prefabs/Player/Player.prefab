@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6419641837777735153}
   - component: {fileID: 6419641837777735152}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Lantern
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -106,7 +106,7 @@ GameObject:
   - component: {fileID: 6419641838290148054}
   - component: {fileID: 6419641838290148052}
   - component: {fileID: 704393914425382471}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -271,7 +271,7 @@ GameObject:
   - component: {fileID: 6419641838480070820}
   - component: {fileID: 6419641838480070821}
   - component: {fileID: 6419641838480070822}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
