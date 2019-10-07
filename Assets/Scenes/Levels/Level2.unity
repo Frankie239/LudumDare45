@@ -715,6 +715,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 984750643, guid: 7c8a6a761c2ddeb478f7dec8c357930e, type: 3}
+      propertyPath: lights.Array.data[0]
+      value: 
+      objectReference: {fileID: 427067240}
+    - target: {fileID: 984750643, guid: 7c8a6a761c2ddeb478f7dec8c357930e, type: 3}
+      propertyPath: lights.Array.data[1]
+      value: 
+      objectReference: {fileID: 427067239}
+    - target: {fileID: 984750643, guid: 7c8a6a761c2ddeb478f7dec8c357930e, type: 3}
+      propertyPath: lights.Array.data[2]
+      value: 
+      objectReference: {fileID: 427067238}
+    - target: {fileID: 984750643, guid: 7c8a6a761c2ddeb478f7dec8c357930e, type: 3}
+      propertyPath: lights.Array.data[3]
+      value: 
+      objectReference: {fileID: 427067237}
+    - target: {fileID: 984750643, guid: 7c8a6a761c2ddeb478f7dec8c357930e, type: 3}
+      propertyPath: lights.Array.data[4]
+      value: 
+      objectReference: {fileID: 427067236}
+    - target: {fileID: 984750643, guid: 7c8a6a761c2ddeb478f7dec8c357930e, type: 3}
+      propertyPath: lights.Array.data[5]
+      value: 
+      objectReference: {fileID: 427067235}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7c8a6a761c2ddeb478f7dec8c357930e, type: 3}
 --- !u!4 &517537569 stripped

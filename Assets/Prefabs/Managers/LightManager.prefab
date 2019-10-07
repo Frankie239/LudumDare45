@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2634464327360286215}
   - component: {fileID: 2634464327360286214}
+  - component: {fileID: 984750643}
   m_Layer: 0
   m_Name: LightManager
   m_TagString: Untagged
@@ -24,7 +25,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2634464327360286213}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -44,3 +45,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentLight: 6
+--- !u!114 &984750643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2634464327360286213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b396458f66255a43954f3640a802b8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lights:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  colors:
+  - {fileID: 21300000, guid: be349a3f13549b243a45669d6296605c, type: 3}
+  - {fileID: 21300000, guid: 2664170a325515a479e947716e0e3344, type: 3}
+  - {fileID: 21300000, guid: b1ee10e331b2da7488bf3de27690f438, type: 3}
+  - {fileID: 21300000, guid: f070078c00c6a3145a20af29ebffdf45, type: 3}
+  - {fileID: 21300000, guid: 41fcfd53013f27d449b104f4b86a1827, type: 3}
+  - {fileID: 21300000, guid: ce9acffad370f3e4c84dd13304ba17ae, type: 3}
