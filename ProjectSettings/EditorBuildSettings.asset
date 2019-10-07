@@ -50,4 +50,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Intros/Thanks.unity
     guid: cea5e6532f56b4cd8bf4d0b9893fa7c3
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: bb1b9e4a6f600d74088d2e94b5c9acd6
   m_configObjects: {}
