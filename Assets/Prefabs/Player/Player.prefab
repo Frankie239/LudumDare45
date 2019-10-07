@@ -42,8 +42,8 @@ Light:
   serializedVersion: 9
   m_Type: 2
   m_Color: {r: 0, g: 0, b: 0, a: 1}
-  m_Intensity: 3
-  m_Range: 2
+  m_Intensity: 0.3
+  m_Range: 7
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -106,6 +106,7 @@ GameObject:
   - component: {fileID: 6419641838290148054}
   - component: {fileID: 6419641838290148052}
   - component: {fileID: 704393914425382471}
+  - component: {fileID: 1227688581}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -169,7 +170,7 @@ SpriteRenderer:
   m_SortingOrder: 1
   m_Sprite: {fileID: 5524432590045150944, guid: 8ec9347374e177c4d8aba7a0f154de74,
     type: 3}
-  m_Color: {r: 0.2, g: 0.18039216, b: 0.18039216, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -258,6 +259,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 992adb79c0ea1754a90e593411bf81a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1227688581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6419641838290148050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 526499dfd9c8f48d3811b9ab2fbe9554, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &6419641838480070823

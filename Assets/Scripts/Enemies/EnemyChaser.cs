@@ -13,9 +13,11 @@ public class EnemyChaser : MonoBehaviour
     public float stopFollowingTime = 0;
     //private float startFollowingTime;
     
+    private Animator animator;
 
     private void Start()
     {
+        animator = GetComponent<Animator>();
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
     }
     private void Update()
@@ -32,7 +34,25 @@ public class EnemyChaser : MonoBehaviour
               
                 if (Vector2.Distance(transform.position, target.position) > distanceToPlayer)
                 {
+                    Vector2 oldPosition = transform.position;
                     transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
+
+                    if(oldPosition.x < transform.position.x)
+                    {
+                        animator.Play("MoveRight");
+                    }
+                    else
+                    {
+                        animator.Play("MoveLeft");
+                    }
+                    if(oldPosition.y < transform.position.y)
+                    {
+                        animator.Play("MoveDown");
+                    }
+                    else
+                    {
+                        animator.Play("MoveUp");
+                    }
                 }
             }
         }
