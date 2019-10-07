@@ -20,7 +20,7 @@ public class SetColorDark : MonoBehaviour
         {
             if(darkMode)
             {
-                SetOriginal();
+                // SetOriginal();
             }
             else
             {

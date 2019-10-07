@@ -19,7 +19,7 @@ public class SetSpriteRenderedDark : MonoBehaviour
         {
             if(darkMode)
             {
-                SetOriginal();
+                // SetOriginal();
             }
             else
             {
