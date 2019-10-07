@@ -20,6 +20,8 @@ public class EnemyChaser : MonoBehaviour
     }
     private void Update()
     {
+        transform.position = new Vector3(transform.position.x,transform.position.y,0);
+
         playerCol = Physics2D.OverlapCircle(transform.position, range, whatIsPlayer);
         Debug.Log(playerCol);
 
@@ -27,6 +29,7 @@ public class EnemyChaser : MonoBehaviour
         {
             if (stopFollowingTime <= 0)
             {
+              
                 if (Vector2.Distance(transform.position, target.position) > distanceToPlayer)
                 {
                     transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
