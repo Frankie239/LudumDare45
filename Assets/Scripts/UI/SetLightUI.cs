@@ -39,5 +39,4 @@ public class SetLightUI : MonoBehaviour
 
         return s;
     }
-
 }

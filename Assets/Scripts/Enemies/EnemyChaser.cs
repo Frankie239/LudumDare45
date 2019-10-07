@@ -12,52 +12,50 @@ public class EnemyChaser : MonoBehaviour
     public LayerMask whatIsPlayer;
     public float stopFollowingTime = 0;
     //private float startFollowingTime;
-    
+
     private Animator animator;
+    private Rigidbody2D rb;
 
     private void Start()
     {
         animator = GetComponent<Animator>();
+        rb = GetComponent<Rigidbody2D>();
         target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
     }
     private void Update()
     {
-        transform.position = new Vector3(transform.position.x,transform.position.y,0);
+        transform.position = new Vector3(transform.position.x, transform.position.y, 0);
 
         playerCol = Physics2D.OverlapCircle(transform.position, range, whatIsPlayer);
-//        Debug.Log(playerCol);
 
         if (playerCol != null)
         {
             if (stopFollowingTime <= 0)
             {
-              
+
                 if (Vector2.Distance(transform.position, target.position) > distanceToPlayer)
                 {
-                    Vector2 oldPosition = transform.position;
-                    transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
-
-                    if(oldPosition.x < transform.position.x)
+                    Vector2 direction = (target.position - transform.position).normalized;
+                    rb.velocity = direction * speed;
+                    if (direction.x > 0)
                     {
                         animator.Play("MoveRight");
                     }
-                    else
+                    if (direction.x < 0)
                     {
                         animator.Play("MoveLeft");
                     }
-                    if(oldPosition.y < transform.position.y)
+                    if (direction.y > 0)
                     {
                         animator.Play("MoveDown");
                     }
-                    else
+                    if (direction.y < 0)
                     {
                         animator.Play("MoveUp");
                     }
                 }
             }
         }
-        
-
     }
 
     private void OnDrawGizmosSelected()
